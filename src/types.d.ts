@@ -1,3 +1,5 @@
+import { LANGUAGES } from './utils/consts';
+
 export interface Question {
   id: string;
   question: string;
@@ -8,4 +10,4 @@ export interface Question {
   isCorrectUserAnswer?: boolean;
 }
 
-export type Lenguage = 'javascript' | 'python';
+export type Lenguage = 'javascript' | 'python' | undefined;
