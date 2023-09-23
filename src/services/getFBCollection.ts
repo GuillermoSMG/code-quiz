@@ -5,6 +5,9 @@ import { type Question, type Lenguage } from '../types';
 export const getFirebase = (collectionName: Lenguage) => {
   const db = getFirestore(app);
 
+  if (collectionName === undefined)
+    throw new Error("Collection name can't be undefined.");
+
   const coll = collection(db, collectionName);
 
   const data = getDocs(coll).then(res => {

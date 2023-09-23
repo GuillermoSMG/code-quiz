@@ -22,7 +22,7 @@ export const useQuestionsStore = create<State>()(
       return {
         questions: [],
         currentQuestion: 0,
-        language: 'javascript',
+        language: undefined,
         loading: false,
 
         fetchQuestion: async (limit: number) => {
@@ -74,7 +74,7 @@ export const useQuestionsStore = create<State>()(
           set({
             currentQuestion: 0,
             questions: [],
-            language: 'javascript',
+            language: undefined,
             loading: false,
           });
         },
