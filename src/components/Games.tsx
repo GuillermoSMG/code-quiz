@@ -14,7 +14,7 @@ const Games = () => {
   const { unanswered } = useQuestionData();
   const questionInfo = questions[currentQuestion];
   return (
-    <section className='flex flex-col'>
+    <section className='flex flex-col mb-6'>
       {unanswered > 0 && (
         <div className='m-auto mt-4 flex gap-4'>
           <ArrowButton

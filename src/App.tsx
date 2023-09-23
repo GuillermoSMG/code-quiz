@@ -14,8 +14,8 @@ function App() {
         </main>
       }
     >
-      <main className='flex flex-col h-[100vh] items-center justify-center'>
-        <h1 className='text-5xl text-slate-200'>Quizzz</h1>
+      <main className='flex flex-col items-center justify-center'>
+        <h1 className='text-5xl text-slate-200 mt-4'>Quizzz</h1>
         {questions.length === 0 ? <Start /> : <Games />}
       </main>
     </Suspense>
