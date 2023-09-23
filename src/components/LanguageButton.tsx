@@ -15,7 +15,7 @@ const LanguageButton: React.FC<LanguageButtonProps> = ({
     <button
       className='hover:opacity-75 disabled:opacity-60'
       disabled={loading}
-      onClick={handleOnClick}
+      onClick={() => handleOnClick()}
     >
       {children}
     </button>
