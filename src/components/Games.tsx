@@ -32,7 +32,7 @@ const Games = () => {
           />
         </div>
       )}
-      <main className='mt-10 bg-gray-900 p-10 flex flex-col justify-between'>
+      <main className='mt-10 sm:bg-gray-900 sm:p-10 flex flex-col justify-between max-w-full'>
         {unanswered > 0 ? <Question info={questionInfo} /> : null}
         <Footer end={!!unanswered} />
       </main>

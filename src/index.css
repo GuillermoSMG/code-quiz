@@ -5,4 +5,5 @@
 body {
   background: rgba(2 6 23/1);
   color: #cac9c9;
+  box-sizing: border-box;
 }

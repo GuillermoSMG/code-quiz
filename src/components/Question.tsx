@@ -18,11 +18,16 @@ const Question: React.FC<QuestionProps> = ({ info }) => {
       goNextQuestion();
     }, 1500);
   };
+
   return (
-    <main>
+    <main className='max-w-[100vw] px-2'>
       <div>
         <h3 className='text-lg text-white'>{question}</h3>
-        <SyntaxHighlighter language='javascript' style={srcery}>
+        <SyntaxHighlighter
+          language='javascript'
+          style={srcery}
+          customStyle={{ padding: '3rem', scrollSnapType: 'block' }}
+        >
           {code}
         </SyntaxHighlighter>
       </div>
@@ -32,7 +37,7 @@ const Question: React.FC<QuestionProps> = ({ info }) => {
             <button
               disabled={info.userSelectedAnswer != null}
               style={{ backgroundColor: getBackgroundColor(i, info) }}
-              className='h-full w-full py-2 px-2'
+              className='h-full w-full py-2 px-2 text-slate-200'
               onClick={createHandleClick(i)}
             >
               {answer}

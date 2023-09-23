@@ -10,7 +10,7 @@ const Footer: React.FC<FooterProps> = ({ end }) => {
   const reset = useQuestionsStore(state => state.reset);
 
   return (
-    <footer className='flex gap-2 items-center'>
+    <footer className='flex gap-2 items-center px-2'>
       <strong>Correct: {correct} </strong>
       <strong>Incorrect: {incorrect} </strong>
       {end && <strong>Unanswered: {unanswered} </strong>}
